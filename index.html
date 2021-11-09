@@ -169,20 +169,26 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="https://formsubmit.co/manzur-1990@hotmail.com" method="POST">
+
 				<a name="contact"></a>
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" name="name" required>
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="subject" required>
 
+				
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
+				<input class="input-field" type="text" name="email" required>
+				
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" placeholder="write your message here" name="message" required></textarea>
+				
+				<input type='hidden' name="_next" value="https://jorgemanzur.com/thankyou.html">
+
+				<input type="hidden" name="_subject" value="Portfolio Website Message">
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
