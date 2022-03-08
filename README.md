@@ -5,6 +5,7 @@
 Jorges's personal website running on React.
 
 ## License
+
 This project is open source and available under the [MIT License](LICENSE).
 
 ## Project Layout
@@ -23,16 +24,7 @@ This project is open source and available under the [MIT License](LICENSE).
     ├── assets
     ├── components
         ├── App.js
-        ├── App.test.js
-        ├── index.css
-        ├── logo.svg
-        └── serviceWorker.js
     ├── pages
-        ├── index.js
-        ├── App.test.js
-        ├── index.css
-        ├── index.js
-        ├── logo.svg
-        └── serviceWorker.js
     ├── utils
-    
+
+```
