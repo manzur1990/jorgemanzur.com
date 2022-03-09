@@ -1,3 +1,5 @@
+import myImage from './static/jorge.jpg'
+
 function App() {
   return (
     <>
@@ -10,7 +12,7 @@ function App() {
                 I am a software engineer who focuses on front-end development
               </p>
             </div>
-            <img src="" alt="main-image" />
+            <img src={myImage} alt="Jorge's image" className="img-responsive" />
           </div>
         </div>
       </header>
