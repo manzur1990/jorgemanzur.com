@@ -1,8 +1,10 @@
 import myImage from './static/jorge.jpg'
+import { Navbar } from './components/Navbar'
 
 function App() {
   return (
     <>
+      <Navbar />
       <header>
         <div class="container">
           <div class="flex-content">
