@@ -1,15 +1,23 @@
+import myImage from './static/jorge.jpg'
+
 function App() {
   return (
     <>
-      <div>Greeting-Wrapper</div>
-      <div>Intro-Wrapper</div>
-      <div>Nav-Wrapper</div>
-      <div>Left-Column</div>
-      <div>Technologies</div>
-      <div>Get In Touch</div>
-      <div>Footer</div>
+      <header>
+        <div class="container">
+          <div class="flex-content">
+            <div>
+              <h1>Hi, I'm Jorge</h1>
+              <p class="subtitle small">
+                I am a software engineer who focuses on front-end development
+              </p>
+            </div>
+            <img src={myImage} alt="Jorge's image" className="img-responsive" />
+          </div>
+        </div>
+      </header>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
