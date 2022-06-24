@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Post Name</title>
+    <head>
+        <title>Post Name</title>
 
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+        />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+            rel="stylesheet"
+        />
 
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+            rel="stylesheet"
+        />
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/default.css" />
 
-	<link rel="stylesheet" type="text/css" href="default.css">
+        <style type="text/css">
+            .img-container {
+                max-width: 600px;
+            }
 
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+            </a>
 
-	<style type="text/css">
-		.img-container{
-			max-width: 600px;
-		}
+            <nav class="main-nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Twitter</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Github</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Linkedin</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-		img{
-			width: 100%
-		}
+        <div class="main-container">
+            <br />
 
-	</style>
+            <div class="img-container">
+                <img src="images/dashboard.jpg" />
+            </div>
 
-</head>
-<body>
-	<div class="nav-wrapper">
+            <h3>Story Squad</h3>
 
-		<!-- Link around dots-wrapper added after tutorial video -->
-		<a href="index.html">
-			<div class="dots-wrapper">
-				<div id="dot-1" class="browser-dot"></div>
-				<div id="dot-2" class="browser-dot"></div>
-				<div id="dot-3" class="browser-dot"></div>
-			</div>
-		</a>
+            <p>
+                Story Squad turns “reluctant readers” into authors and
+                illustrators through a collaborative world-building game.
+                <br />
+                <br />
+                Provided bug free CRUD operations in the frontend.
+                <br />
+                <br />
+                Implemented gamification logic in the input fields for point
+                distribution.
+                <br />
+                <br />
+                The team consisted of 3 frontend and 1 backend engineers.
+                <br />
+                <br />
+                Performed testing on backend endpoints.
+            </p>
 
-		<ul id="navigation">
-			<li><a href="index.html#contact">Contact</a></li>
+            <h5>Technologies:</h5>
+            <ul>
+                <li>- React JS</li>
+                <li>- Node JS</li>
+                <li>- Postgres</li>
+                <li>- AWS (S3 & RDS)</li>
+            </ul>
 
-		</ul>
-	</div>
+            <h5>Admin Dashboard</h5>
+            <div class="img-container">
+                <img src="images/admin_dashboard.jpg" />
+            </div>
 
-	<div class="main-container">
-		<br>
+            <h5>Mission Selection</h5>
+            <div class="img-container">
+                <img src="images/mission_selection.jpg" />
+            </div>
 
-		<div class="img-container">
-			<img src="images/dashboard.jpg">
-		</div>
-		
-		<h3>Story Squad</h3>
+            <h5>Results Input Fields</h5>
+            <div class="img-container">
+                <img src="images/share_point.jpg" />
+            </div>
 
-		<p>Story Squad turns “reluctant readers” into authors and illustrators through a collaborative world-building game.
-		<br>
-		<br>
-		Provided bug free CRUD operations in the frontend. 
-		<br>
-		<br>
-		Implemented gamification logic in the input fields for point distribution.
-		<br>
-		<br>
-		The team consisted of 3 frontend and 1 backend engineers.
-		<br>
-		<br>
-		Performed testing on backend endpoints.</p>
-
-		<h5>Technologies:</h5>
-		<ul>
-			<li>- React JS</li>
-			<li>- Node JS</li>
-			<li>- Postgres</li>
-			<li>- AWS (S3 & RDS)</li>
-		</ul>
-
-
-		<h5>Admin Dashboard</h5>
-		<div class="img-container">
-			<img src="images/admin_dashboard.jpg">
-		</div>
-
-		<h5>Mission Selection</h5>
-		<div class="img-container">
-			<img src="images/mission_selection.jpg">
-		</div>
-
-		<h5>Results Input Fields</h5>
-		<div class="img-container">
-			<img src="images/share_point.jpg">
-		</div>
-
-		<h5>Child Selection</h5>
-		<div class="img-container">
-			<img src="images/child_selection.jpg">
-		</div>
-
-	</div>
-
-</body>
+            <h5>Child Selection</h5>
+            <div class="img-container">
+                <img src="images/child_selection.jpg" />
+            </div>
+        </div>
+    </body>
 </html>
