@@ -13,6 +13,8 @@
     --previewShadow: #f0ead6;
 
     --buttonColor: black;
+
+    --spacing: 1.4rem;
 }
 
 html,
@@ -76,38 +78,25 @@ h6 {
     font-size: 16px;
 }
 
-.s1 {
-    background-color: var(--mainColor);
-    border-bottom: 1px solid var(--borderColor);
-    overflow: auto;
-}
-
-.s2 {
-    background-color: var(--secondaryColor);
-    border-bottom: 1px solid var(--borderColor);
-    overflow: auto;
-}
-
-.s1 h3 {
-    margin-top: -40px;
-}
-
 .nav__list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 .nav__link {
-    --spacing: 1em;
     text-decoration: none;
-    color: inherit;
+    color: var(--spacing);
     display: inline-block;
     padding: calc(var(--spacing) / 2) var(--spacing);
     position: relative;
-    text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1;
+}
+.main-nav {
+    background-color: var(--secondaryColor);
+    padding-top: 10px;
 }
 
 .nav__link:after {
@@ -117,11 +106,7 @@ h6 {
     left: var(--spacing);
     right: var(--spacing);
     height: 2px;
-    background: currentColor;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    transition: -webkit-transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out;
+    background: var(--mainColor);
     transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
 }
 
@@ -135,32 +120,24 @@ h6 {
     transform: scaleX(1);
 }
 
-.nav__link--btn:hover {
-    background: var(--text);
-    color: var(--text-inverse);
-    border-color: var(--text);
+.s1 {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
 }
 
-.nav__link--btn::after {
-    display: none;
+.s2 {
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
 }
 
-.nav__link--btn--highlight {
-    background: limegreen;
-    border-color: limegreen;
-    color: #333;
+.s1 h3 {
+    margin-top: -46px;
 }
 
-.nav__link--btn--highlight:hover {
-    background: var(--text);
-    border-color: var(--text);
-}
-
-.nav-scrolled {
-    --text: #333;
-    --text-inverse: #f4f4f4;
-    --background: #f4f4f4;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+.corner h3 {
+    margin-bottom: 50rem;
 }
 
 .home-intro {
@@ -242,21 +219,6 @@ h6 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--mainColor);
-}
-
-#navigation a {
-    color: var(--mainText);
-}
-
-#navigation {
-    margin: 0;
-    padding: 10px;
-}
-
-#navigation li {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
 }
 
 .dots-wrapper {
